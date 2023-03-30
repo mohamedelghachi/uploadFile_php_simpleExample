@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formins.css">
+    <title>formulaire d'inscription</title>
+</head>
+<body>
+    <fieldset>
+        <form action="server.php" method="post" enctype="multipart/form-data">
+            <h1>Formulaire d'inscription</h1>
+            <table>
+                <tr>
+                    <th>Prénom: </th>
+                    <th>Nom: </th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Prénom" id="Prénom" placeholder="votre prénom"></td>
+                    <td><input type="text" name="nom" id="nom" placeholder="votre nom"></td>
+                </tr>
+                <tr>
+                    <th>Date de daissance</th>
+                    <th>Téléphone:</th>
+                </tr>
+                <tr>
+                    <td><input type="date" id="select" name="trip-start" min="1000-12-31" max="2023-01-01"></td>
+                    <td><input type="tel"  id="phone" name="phone"  placeholder="Votre téléphone"></td>
+                </tr>
+                <tr>
+                    <th>Villes:</th>
+                    <th>Pays:</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ville" id="ville" placeholder="Votre ville"></td>
+                    <td><select name="pays" id="select">
+                        <option value="Maroc" selected="selected">Maroc</option>
+                        <option value="Egypte">Egypte </option>
+                        <option value="France" selected="selected">France </option>
+                        <option value="Turquie">Turquie </option>
+                        <option value="Tunisie">Tunisie </option>
+                        <option value="Syrie">Syrie </option>
+                        <option value="Philippines">Philippines </option>
+                        <option value="Italie">italie </option>
+                    </td>
+                </tr>
+                    <tr>
+                        <th>Adresse:</th>
+                        <th>Code postal:</th>
+                    </tr>
+                    <tr>
+                        <td><textarea name="adresse" id="select" cols="30" rows="1"></textarea></td>
+                        <td><input type="text" name="postal" id="postal" placeholder="Votre code postal"></td>
+                    </tr>
+                <tr>
+                    <th colspan="2">Civilité:</th>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="civi" id="femme" value="Femme">
+                        <label for="femme">Femme</label>
+                    </td>
+                    <td><input type="radio" name="civi" id="homme" value="Homme">
+                        <label for="homme">Homme</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"> Comment avez entendu parler de ce site?</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="site1[]" id="ami" value="ami">
+                        <label for="ami">Un ami</label>
+                        <input type="checkbox" name="site1[]" id="pub" value="pub">
+                        <label for="pub">Une publicité</label>
+                        <input type="checkbox" name="site1[]" id="hasard" value="hasard">
+                        <label for="hasard">Par hasard</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <th>Mot de passe :</th>
+                </tr>
+                <tr>
+                    <td><input id="mail" type="email" placeholder="Votre Email" name="email"> </td>
+                    <td><input type="password" name="password" id="password" placeholder="Votre mot de pass"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Avatar:</th>
+                </tr>
+                <tr>
+                       <td> <input type="file" name="file" id="file"> </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Notez ce formulaire sur une échelle de 1 à 5 :</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="range" id="points" name="points" min="0" max="5" class="button"></td>></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Choisir un couleur:</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="color" name="color" id="color"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="s'inscrire" id="submit" class="button"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" name="reset" id="reset" class="button"  ></td>
+                </tr>
+                </table>
+            
+        </form>
+    </fieldset>
+    
+</body>
+</html>
